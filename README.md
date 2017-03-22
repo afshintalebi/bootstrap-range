@@ -1,6 +1,6 @@
 # bootstrap-range
 jQuery plugin for select minimum and maximum value from a list
----
+
 ```javascript
 $('.price').bootstrapRange({
     minValues: [0,1000,2000,3000],

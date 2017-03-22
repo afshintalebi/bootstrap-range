@@ -1,0 +1,54 @@
+{
+  "name": "bootstrap-range",
+  "version": "1.1.0",
+  "description": "A value select based on bootstrap popover plugin",
+  "homepage": "https://github.com/afshintalebi/bootstrap-range",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/afshintalebi/bootstrap-range"
+  },
+  "authors": [
+    "Afshin Talebi <afshin.talebi@gmail.com>"
+  ],
+  "keywords": [
+    "popover",
+    "select",
+    "framework",
+    "bootstrap",
+    "jquery"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "browser-sync": "^2.17.3",
+    "gulp": "^3.9.1",
+    "gulp-cache": "^0.4.5",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-concat": "^2.6.0",
+    "gulp-if": "^2.0.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-watch": "^4.3.10",
+    "run-sequence": "^1.2.2",
+    "yargs": "^6.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/matthewhartman/base/issues"
+  },
+  "main": "gulpfile.js",
+  "author": "Afsin Talebi",
+  "dependencies": {
+    "gulp-rename": "^1.2.2"
+  }
+}

@@ -9,7 +9,7 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="./dist/css/bootstrap-range.css" rel="stylesheet">
+    <link href="./css/bootstrap-range.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,10 +26,7 @@
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <form>
                     <div class="form-group">
-                        <input type="text" placeholder="انتخاب سن" class="form-control age">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" placeholder="انتخاب قیمت" class="form-control price">
+                        <input type="text" placeholder="Select Age" class="form-control age">
                     </div>
                 </form>
             </div>
@@ -41,36 +38,22 @@
     <!-- bootstrap -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- bootstrap-range plugin -->
-    <script type="text/javascript" src="./dist/js/bootstrap-range.js"></script>
+    <script type="text/javascript" src="./js/bootstrap-range.js"></script>
     <script type="text/javascript">
-        $('.age').bootstrapRange({
-            minValues: [10,15,20,25,30,40],
-            maxValues: [10,15,20,25,30,40],
-            minPlaceholder:'حداقل',
-            maxPlaceholder:'حداکثر',
-            minHintText: "از",
-            maxHintText: "تا",
-            minimumCallback: function (min) {
-                console.log(min);
-            },
-            maximumCallback: function (max) {
-                console.log(max);
-            }
-        });
-        $('.price').bootstrapRange({
-            minValues: [0,1000,2000,3000],
-            maxValues: [0,1000,2000,3000],
-            minPlaceholder:'حداقل',
-            maxPlaceholder:'حداکثر',
-            minHintText: "از",
-            maxHintText: "تا",
-            minimumCallback: function (min) {
-                console.log(min);
-            },
-            maximumCallback: function (max) {
-                console.log(max);
-            }
-        });
+      $("input.age").bootstrapRange({
+        minValues: [10,15,20,25,30,40],
+        maxValues: [10,15,20,25,30,40],
+        minPlaceholder:'Min',
+        maxPlaceholder:'Max',
+        minHintText: "From",
+        maxHintText: "to",
+        minimumCallback: function (min) {
+          console.log('Selected minimum = ', min);
+        },
+        maximumCallback: function (max) {
+          console.log('Selected maximum = ', max);
+        }
+      });
     </script>
   </body>
 </html>

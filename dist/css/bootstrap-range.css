@@ -1,0 +1,52 @@
+.bootstrap-range {
+  width: 260px;
+}
+
+.bootstrap-range .right-column {
+  float: right;
+  width: 130px;
+  padding: 5px;
+}
+
+.bootstrap-range .left-column {
+  float: left;
+  width: 130px;
+  padding: 5px;
+}
+
+.bootstrap-range .input-container {
+  text-align: center;
+}
+
+.bootstrap-range .input-styles, .bootstrap-range input[name="minimum"], .bootstrap-range input[name="maximum"] {
+  width: 100px;
+  border: none;
+  border-bottom: 1px solid gray;
+  font-size: 0.9em;
+  padding: 3px;
+}
+
+.bootstrap-range .list-items ul li {
+  padding: 5px 10px;
+}
+
+.bootstrap-range .list-items ul li:hover {
+  cursor: pointer;
+  color: blue;
+}
+
+.bootstrap-range .list-items ul li.disabled {
+  opacity: 0.3;
+}
+
+.bootstrap-range .list-items ul li.disabled:hover {
+  cursor: default;
+}
+
+.bootstrap-range .list-items.minimum-items ul li {
+  text-align: left;
+}
+
+.bootstrap-range .list-items.maximum-items ul li {
+  text-align: left;
+}
